@@ -7,4 +7,4 @@ There are 7 files in this project
 5- visualize_view.py : print view from database.
 6- runner.py : To run this project you need to run this file.
 7- pipeline_dag.py : It contains airflow dag, currently showing only dag to read csv
-but it's not running right now we can use airflow for track the pipeline's progress, status, and error messages.
+but it's not running right now. We can use airflow for track the pipeline's progress, status, and error messages.
