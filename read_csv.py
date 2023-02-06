@@ -3,8 +3,8 @@ import pandas as pd
 
 def read_csv_from_s3(bucket, prefix):
     s3 = boto3.client('s3',
-                      aws_access_key_id="AKIA6NFIZTMI7OVK5WMX",
-                      aws_secret_access_key="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")
+                      aws_access_key_id="", 
+                      aws_secret_access_key="")  #add credentials
     result = s3.list_objects(Bucket=bucket, Prefix=prefix)
     df_list = []
     for content in result.get("Contents"):
