@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect('postgresql://pipeline:pipeline-pass@localhost/challenge')
+conn = psycopg2.connect('postgresql://') #connnection string
 cursor = conn.cursor()
 table_name = 'customer_data'
 check_view_query = """
