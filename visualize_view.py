@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect('postgresql://pipeline:pipeline-pass@localhost/challenge')
+conn = psycopg2.connect('') #connection string
 cursor = conn.cursor()
 
 select_view_query = """
