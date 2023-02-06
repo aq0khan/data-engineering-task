@@ -4,10 +4,10 @@ df = read_csv
 df = df.dropna()
 def store_data(table_name):
     conn = psycopg2.connect(
-            database="challenge",
-            user="pipeline",
-            password="pipeline-pass"
-        )
+            database="",
+            user="",
+            password=""
+        ) #add credentials
     cursor = conn.cursor()
     check_table_query = f"SELECT to_regclass('public.{table_name}')"
     cursor.execute(check_table_query)
